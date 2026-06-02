@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Customer Churn Prediction</title>
+
+    <style>
+
+        body {
+            background-color: #121212;
+            font-family: Arial;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+        }
+
+        .container {
+
+            background-color: #1e1e1e;
+
+            padding: 40px;
+
+            border-radius: 15px;
+
+            width: 350px;
+
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+
+            text-align: center;
+            color: #00d4ff;
+        }
+
+        input,
+        select {
+
+            width: 100%;
+
+            padding: 10px;
+
+            margin-top: 10px;
+
+            border-radius: 8px;
+
+            border: none;
+        }
+
+        input[type="submit"] {
+
+            background-color: #00d4ff;
+
+            color: black;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+
+            background-color: #00aacc;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Customer Churn Prediction</h1>
+
+        <form action="/predict_form" method="post">
+
+            <input
+                type="text"
+                name="tenure"
+                placeholder="Tenure"
+            >
+
+            <input
+                type="text"
+                name="monthlycharges"
+                placeholder="Monthly Charges"
+            >
+
+            <br>
+
+            <label>Contract Type:</label>
+
+            <select name="contract">
+
+                <option value="month">
+                    Month-to-month
+                </option>
+
+                <option value="one_year">
+                    One year
+                </option>
+
+                <option value="two_year">
+                    Two year
+                </option>
+
+            </select>
+
+            <input
+                type="submit"
+                value="Predict"
+            >
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+
+    </form>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
